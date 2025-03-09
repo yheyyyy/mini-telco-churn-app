@@ -2,13 +2,13 @@ FROM python:3.11-slim
 
 WORKDIR /flask-app
 
-COPY ./requirements.txt ./requirements.txt
-COPY ./src ./src
-COPY ./model ./model
+COPY ./requirements.txt /flask-app/requirements.txt
+COPY ./src /flask-app/src
+COPY ./model /flask-app/model
 
 ENV PYTHONPATH /flask-app/src
 
-RUN pip install -r requirements.txt
+RUN pip install -r /flask-app/requirements.txt --no-cache-dir
 
 EXPOSE 80
 
