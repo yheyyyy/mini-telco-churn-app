@@ -3,4 +3,5 @@ venv/
 
 # Byte-compiled, cached, optimized files
 __pycache__/
-catboost_info/
+notebooks/catboost_info/
+notebooks/tmp/
